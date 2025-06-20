@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="description" content="这是一个学习html5标签的页面">
+        <title> Html5 ABC</title> 
+    </head>
+
+    <body>
+        <header> 
+            <h1> 介绍html5标准 </h1>
+            <nav>
+                <ul>
+                    <li><a href="#"> 首页 </a></li>
+                    <li><a href="#"> 关于 </a></li>
+                </ul>
+            </nav>
+
+
+        </header>
+
+        <main>
+            <article>
+                <h4>html5介绍</h4>
+
+            <p> html5提供了许多语义化的标签,如header, footer, nav等 </p>
+            <ul>
+                <li>header: 用于页面或章节的头部，通常包含导航栏、标题</li>
+                <li>main: 表示页面的主要内容，一个页面只有一个</li>
+                <li>footer: 用于页面或章节的底部，通常包含版权、联系方式等</li>
+                <li>video: 媒体标签</li>
+                <li>audio: 嵌入音频</li>
+                <li>details、summary: 交互元素, 可折叠信息面板</li>
+                <li>表单增强类型input, datalist </li>
+                <li>button: 按钮</li>
+                <li>div: 布局, 块级容器。所谓块级容器就是独占一行,并且占据整个行宽. 可通过CSS设置宽、高。可包含其他块级和行内元素。
+                <ul>
+                    <li>div,p, h1-h6, ul, ol, li, form, table, header, main, footer </li>
+
+                </ul>
+
+                </li>
+
+                <li>span: 布局, 行内容器。所谓行内容器，具有不换行、宽高有内容决定、只能包含行内元素的特点。
+                    <ul>
+                        <li>a,img,span,input,button,label,select,textarea等元素</li>
+                    </ul>
+
+
+                </li>
+                <li>iframe: 嵌入外部网页</li>
+                <li>canvas: 画布。 通过javascript绘制图形，如图表、游戏</li>
+                <li>svg: 嵌入矢量图,无须外部文件</li>
+                <li>meta: 元数据, 如字符编码、页面描述等</li>
+
+            </ul>
+            <video width="320" height="240" controls>
+                <source src="video.mp4" type="video/mp4">
+                您的浏览器不支持视频标签
+            </video>
+
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                您的浏览器不支持音频标签
+            </audio>
+
+            <details>
+                <summary>点击展开详情</summary>
+                <p>这里是隐藏的详细情况...</p>
+                <p>1234</p>
+
+            </details>
+
+            <div>div1</div>
+            <span style="color: yellow;">这部分内容是黄色的</span>
+
+            <button onclick="alert('Hello')">按钮</button>
+
+            <iframe src="https://www.baidu.com" width="500" height="300"></iframe>
+
+            <canvas id="myCanvas" width="200" height="100"></canvas>
+
+            <script>
+                const canvas = document.getElementById('myCanvas');
+                const ctx = canvas.getContext('2d');
+                ctx.fillStyle = 'green';
+                ctx.fillRect(10,10,200,50);
+
+
+            </script>
+
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="blue"/>
+
+            </svg>
+
+
+            </article>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 版权所有</p>
+
+        </footer>
+    </body>
+</html>
