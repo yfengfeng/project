@@ -1,0 +1,16 @@
+p { color: chartreuse;} /* 注释 */
+h1 { font-size: 24px; color: #888;} /* 注释 */
+
+#div1 {
+    border: #888;
+    height: 100px;
+    width: 200px;
+    background-color: #888;
+}
+
+#div2 {
+    border: #a80;
+    height: 100px;
+    width: 300px;
+    background-color: chocolate;
+}

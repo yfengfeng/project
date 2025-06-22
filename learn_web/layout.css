@@ -1,0 +1,22 @@
+.fl {
+    border-width: 2px;
+    border-color: #888;
+    border-style: solid;
+}
+.sidebar {
+    float: left;
+    width: 20%;
+}
+
+.content {
+    float: right;
+    width: 75%;
+}
+
+/*
+.content::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+    */

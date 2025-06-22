@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="description" content="这是一个学习javascript的页面">
+        <title> javascript ABC</title> 
+    </head>
+
+    <body>
+        <button id="myButton">点击我</button>
+
+        <script>
+            let clickCount = 0;
+            console.log('clickCount= ', clickCount);
+            const button = document.getElementById('myButton');
+            button.addEventListener('click', function(){
+                clickCount++;
+                console.log('点击次数: ', clickCount);
+            });
+        </script>
+    </body>
+</html>
